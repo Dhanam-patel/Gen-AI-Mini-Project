@@ -1,0 +1,5 @@
+langchain-huggingface
+langchain
+dotenv
+streamlit
+pyttsx3
