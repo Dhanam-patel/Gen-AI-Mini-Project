@@ -4,13 +4,14 @@ import streamlit as st
 from langchain_core.prompts import PromptTemplate, load_prompt
 # import pyttsx3
 
-load_dotenv()
+api_key = st.secrets["HUGGINGFACEHUB_API_TOKEN"]
 
 # engine = pyttsx3.init()
 
 llm = HuggingFaceEndpoint(
     repo_id="baidu/ERNIE-4.5-300B-A47B-Base-PT",
     task="text-generation",
+    huggingfacehub_api_token=api_key
 )
 
 model = ChatHuggingFace(llm=llm,temprature=2)
