@@ -128,9 +128,9 @@ Text Summarizer/
 ├── template.json             # Prompt templates for summarization
 └── [Other configuration files]
 ```
-![Alt Text]("TextSummarizer"/Image1.png)
+![Alt Text]("Text-Summarizer"/Image1.png)
 
-![Alt Text]("TextSummarizer"/Image2)
+![Alt Text]("Text-Summarizer"/Image2)
 ---
 
 ## ✨ Features
