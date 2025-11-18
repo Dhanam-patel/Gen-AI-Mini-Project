@@ -4,7 +4,7 @@ import streamlit as st
 from langchain_core.prompts import PromptTemplate, load_prompt
 # import pyttsx3
 
-api_key = st.secrets["HUGGINGFACEHUB_API_TOKEN"]
+api_key = "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"  #st.secrets["HUGGINGFACEHUB_API_TOKEN"]
 
 # engine = pyttsx3.init()
 
@@ -20,7 +20,7 @@ tone = st.selectbox("Select the desired tone for the summary",["Professional", "
 length = st.selectbox("Select the desired length for the summary(The length of summary will also depend on the length of text)",["short(50 to 60 words)", "Medium (100 to 120 words)", "Large (more than 150 words)"])
 Format = st.selectbox("Select the desired Format for the summary",["Paragraph", "Numbered Steps", "Bullet Points"])
 language = st.selectbox("Select the desired language for the summary",["English", "Hindi", "Gujarati"])
-template = load_prompt("Text Summarizer/template.json")
+template = load_prompt("template.json")
 prompt = template.invoke({
     "text": text,
     "tone": tone,
