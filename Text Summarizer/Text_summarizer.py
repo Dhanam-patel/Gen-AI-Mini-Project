@@ -2,11 +2,11 @@ from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 from dotenv import load_dotenv
 import streamlit as st
 from langchain_core.prompts import PromptTemplate, load_prompt
-# import pyttsx3
+import os
 
-api_key = "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"  #st.secrets["HUGGINGFACEHUB_API_TOKEN"]
 
-# engine = pyttsx3.init()
+api_key = os.getenv("api_key")
+
 
 llm = HuggingFaceEndpoint(
     repo_id="baidu/ERNIE-4.5-300B-A47B-Base-PT",
@@ -32,5 +32,3 @@ prompt = template.invoke({
 if st.button("Summarize"):
     result = model.invoke(prompt)
     st.write(result.content)
-    # engine.say(result.content)
-    # engine.runAndWait()
