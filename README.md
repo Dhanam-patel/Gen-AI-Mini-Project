@@ -130,7 +130,7 @@ Text Summarizer/
 ```
 ![Alt Text]("Text-Summarizer"/Image1.png)
 
-![Alt Text]("Text-Summarizer"/Image2)
+![Alt Text]("Text-Summarizer"/Image2.png)
 ---
 
 ## ✨ Features
