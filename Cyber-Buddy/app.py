@@ -18,7 +18,7 @@ if 'history' not in st.session_state:
 
 user = st.chat_input("You: ")
 
-Prompt_load = load_prompt("Prompt/Prompt.json")
+Prompt_load = load_prompt("Cyber-Buddy/Prompt/Prompt.json")
 
 if user:
     chat_history_text = "\n".join([f"{type(msg).__name__}: {msg.content}" for msg in st.session_state.history])
