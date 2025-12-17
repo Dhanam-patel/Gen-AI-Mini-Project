@@ -2,3 +2,4 @@ streamlit
 langchain-huggingface
 huggingface-hub
 langchain-google-genai
+python-dotenv
